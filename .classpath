@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/ProtocolLib.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/Vault (2).jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/ajLeaderboards-2.7.0 (2).jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/DecentHolograms-2.8.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/PlaceholderAPI-2.11.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/area de trabalho 1 (1)/NOVO SLADE V2/ARENA/plugins/LuckPerms-Bukkit-5.4.98.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/eclipse-workspace/WaveCore/target/WaveCore-v1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Desktop/KOMBOPVP SW E SURVIVAL E PRISON E PVP E SKYBLOCK/PVP/plugins/ServerController.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/lombok.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/spigot-api-1.20.6-R0.1-20240610.041013-53.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/BungeeCord.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/ViaVersion-5.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/TAB v4.1.6 (1).jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/MCJDA.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Home/Downloads/okhttp-5.0.0-alpha.14.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

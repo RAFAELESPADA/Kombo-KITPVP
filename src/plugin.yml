@@ -1,0 +1,73 @@
+name: WaveMC
+version: 4.0.0
+authors: [EvilNaraku, Rafael Auler]
+main: net.wavemc.pvp.WavePvP
+description: Plugin de PvP do KOMBO
+api-version: 1.14
+depend: [WaveCore, DecentHolograms, PlaceholderAPI, ajLeaderboards, ViaVersion, TAB]
+
+commands:
+   spawn:
+     aliases: [spawn2]
+   skit:
+   event:
+   tpall:
+   admin:
+   setwarp:
+   discord:
+   build:
+   stats:
+   status:
+   finalizarbatalhas:
+   givexp:
+   limparcache:
+   money:
+   lastlogin:
+   ll:
+   report:
+   head:
+   dueljoin:
+   removekit:
+   gm:
+   invsee:
+   clear:
+   tphere:
+   gamemode:
+   lobby:
+   hub:
+   dinheiro:
+   aplicar:
+   warpjoin:
+   set1v1:
+   sendtitle:
+   givecoins:
+   autosoup:
+   pvp:
+   macrotest:
+   setfeast:
+   warpinfo:
+   fly:
+   kitpvp:
+   pinfo:
+   givekills:
+   givedeaths:
+   resetkdr:
+   givekit:
+   v:
+   evento:
+   lavainiciar:
+   1v1iniciar:
+   furia:
+   arenainiciar:
+   vanish:
+   sethologram:
+   rank:
+      aliases: [ranks]
+   scoreboard:
+      aliases: [score]
+   verrank:
+      aliases: [profile]
+   actionbar:
+   
+   
+   

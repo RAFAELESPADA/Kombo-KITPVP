@@ -1,0 +1,62 @@
+package net.wavemc.pvp.command;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+import net.wavemc.core.bukkit.WaveBukkit;
+import net.wavemc.core.bukkit.account.WavePlayer;
+
+public class ResetKDR
+  implements Listener, CommandExecutor
+{
+  public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+  {
+    if (cmd.getName().equalsIgnoreCase("resetkdr"))
+    {
+      if (!(sender instanceof Player)) {
+        return true;
+      }
+      Player p = (Player)sender;
+      if (args.length == 0) {
+    	  p.sendMessage(ChatColor.RED + "Utilize /resetkdr <nick>");
+        return true;
+      }
+      else if (!sender.hasPermission("admin.cmd.resetkdr")) {
+          sender.sendMessage("§cVocê não tem permiss§o");
+          return true;
+      }
+      Player t = Bukkit.getPlayer(args[0]);
+      if (args.length == 1) {
+    	  if (t == null) {
+              sender.sendMessage("§cO Player precisa estar online");
+              return true;  
+    	  }
+    	  WavePlayer pk = WaveBukkit.getInstance().getPlayerManager().getPlayer(t.getName());
+    	  WavePlayer playerData = WaveBukkit.getInstance().getPlayerManager().getPlayer(t.getName());
+			pk.getPvp().setDeaths(0);
+			pk.getPvp().setKills(0);
+			pk.getPvp().setCoins(0);
+			pk.getPvp().setKillstreak(0);
+			 playerData.getPvp().setXp(0);
+             playerData.getPvp().setWinstreakx1(0);
+             playerData.getPvp().setWinsx1(0);
+             playerData.getPvp().setKillsfps(0);
+             playerData.getPvp().setDeathssumo(0);
+             playerData.getPvp().setKillsfps(0);
+             playerData.getPvp().setDeathsx1(0);
+             playerData.getPvp().setWinstreaksumo(0);
+			Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "ajl removeplayer " + t.getName() + " helixpvp2_player_kills");
+			if (t != null) {
+			t.kickPlayer("§cSeu kdr foi resetado por um staff!");
+			}
+			Bukkit.broadcast("§4§lRESETKDR §a" + p.getName() + " §fresetou o KDR do Jogador " + t.getName(), "kombo.cmd.report");
+      }
+    }
+    return true;
+  }
+}
+
